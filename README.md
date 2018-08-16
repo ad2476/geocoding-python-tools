@@ -147,7 +147,7 @@ The following modules are available (please click on their names to access furth
 
 ## Author
 
-This application is written and maintained by Franz-Benjamin Mocnik, <mail@mocnik-science.net>.
+This application was written by Franz-Benjamin Mocnik, <mail@mocnik-science.net> - with minor modifications. See the commit log for a record of changes.
 
 (c) by Franz-Benjamin Mocnik, 2017-2018.
 

@@ -1,8 +1,8 @@
 from setuptools import setup
 
 name = 'OSMPythonTools'
-version = '0.2.4'
-url = 'https://github.com/mocnik-science/osm-python-tools'
+version = '0.2.5'
+url = 'https://github.com/ad2476/osm-python-tools'
 
 with open('./OSMPythonTools/__info__.py', 'w') as f:
     f.write('__name__ = \'%s\'\n' % name)
