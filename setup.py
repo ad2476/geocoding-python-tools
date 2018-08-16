@@ -11,7 +11,7 @@ with open('./GeocodingTools/__info__.py', 'w') as f:
 
 setup(
     name = name,
-    packages = ['GeocodingTools', 'GeocodingTools.internal'],
+    packages = setuptools.find_packages(),
     install_requires = [
         'beautifulsoup4',
         'datetime',
