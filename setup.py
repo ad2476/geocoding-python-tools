@@ -2,7 +2,7 @@ from setuptools import setup
 
 name = 'GeocodingTools'
 version = '0.2.5'
-url = 'https://github.com/ad2476/osm-python-tools'
+url = 'https://github.com/ad2476/geocoding-python-tools'
 
 with open('./GeocodingTools/__info__.py', 'w') as f:
     f.write('__name__ = \'%s\'\n' % name)
@@ -23,8 +23,8 @@ setup(
         'xarray',
     ],
     version = version,
-    author = 'Franz-Benjamin Mocnik',
-    author_email = 'mail@mocnik-science.net',
+    maintainer = 'Arun Drelich',
+    maintainer_email = 'arun@arundreli.ch',
     description = 'A library to access geocoding services such as OpenStreetMap or Geonames',
     license = 'GPL-3',
     url = url,

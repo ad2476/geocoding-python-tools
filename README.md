@@ -8,7 +8,7 @@ with API rate limits and obligations of clients to cache requests.
 
 To install `GeocodingTools`, you will need Python 3 and `pip` ([How to install pip](https://pip.pypa.io/en/stable/installing/)).
 ```bash
-pip3 install git+https://github.com/ad2476/osm-python-tools
+pip3 install git+https://github.com/ad2476/geocoding-python-tools
 ```
 
 ## OSMPythonTools
@@ -159,4 +159,4 @@ See the commit log for a record of changes.
 (c) by Franz-Benjamin Mocnik, 2017-2018.
 (c) by Arun Drelich, 2018.
 
-The code is licensed under the [GPL-3](https://github.com/ad2476/osm-python-tools/blob/master/LICENSE.md).
+The code is licensed under the [GPL-3](https://github.com/ad2476/geocoding-python-tools/blob/master/LICENSE.md).
