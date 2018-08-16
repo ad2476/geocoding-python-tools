@@ -1,19 +1,21 @@
-# OSMPythonTools
+# GeocodingTools
 
-The python package `OSMPythonTools` provides easy access to [OpenStreetMap (OSM)](http://www.openstreetmap.org) related services, among them an [Overpass endpoint](https://wiki.openstreetmap.org/wiki/Overpass_API), [Nominatim](http://nominatim.openstreetmap.org), and the [OSM API](https://wiki.openstreetmap.org/wiki/API).
+Incorporates Franz-Benjamin Mocnik's [OSMPythonTools](https://github.com/mocnik-science/osm-python-tools) library into a more general library for geocoding using supported gazetteer services.
+Currently supported are: OpenStreetMap [Nominatim](http://nominatim.openstreetmap.org), [Geonames](http://www.geonames.org/). Endpoint implementations rely on the internal `CacheObject` to comply
+with API rate limits and obligations of clients to cache requests.
 
 ## Installation
 
-To install `OSMPythonTools`, you will need `python3` and `pip` ([How to install pip](https://pip.pypa.io/en/stable/installing/)). Then execute:
-```shell
-pip install OSMPythonTools
-```
-On some operating systems, `pip` for `python3` will be named `pip3`:
-```shell
-pip3 install OSMPythonTools
+To install `GeocodingTools`, you will need Python 3 and `pip` ([How to install pip](https://pip.pypa.io/en/stable/installing/)).
+```bash
+pip3 install git+https://github.com/ad2476/osm-python-tools
 ```
 
-## Example 1
+## OSMPythonTools
+
+The sub-package `OSMPythonTools` provides easy access to [OpenStreetMap (OSM)](http://www.openstreetmap.org) related services, among them an [Overpass endpoint](https://wiki.openstreetmap.org/wiki/Overpass_API), [Nominatim](http://nominatim.openstreetmap.org), and the [OSM API](https://wiki.openstreetmap.org/wiki/API).
+
+### Example 1
 
 *Which object does the way with the id `5887599` represent?*
 
@@ -33,7 +35,7 @@ way.tag('website')
 # 'http://www.belvedere.at'
 ```
 
-## Example 2
+### Example 2
 
 *What is the English name of the church called "Stephansdom", what address does it have, and which of which denomination is the church?*
 
@@ -59,7 +61,7 @@ stephansdom.tag('denomination')
 # 'catholic'
 ```
 
-## Example 3
+### Example 3
 
 *How many trees are in the OSM data of Vienna? And how many trees have there been in 2013?*
 
@@ -85,7 +87,7 @@ result.countElements()
 # 127689
 ```
 
-## Example 4
+### Example 4
 
 *How did the number of trees in Berlin, Paris, and Vienna change over time?*
 
@@ -135,7 +137,7 @@ data.select(city=ALL).getCSV()
 
 More examples can be found inside the documentation of the modules.
 
-## Usage
+### OSMPythonTools Usage
 
 The following modules are available (please click on their names to access further documentation):
 
@@ -145,10 +147,16 @@ The following modules are available (please click on their names to access furth
 * [OSMPythonTools.**Nominatim**](docs/nominatim.md) - Access to Nominatim, a reverse geocoder
 * [OSMPythonTools.**Overpass**](docs/overpass.md) - Access to the Overpass API
 
+## GeonamesTools
+
+Documentation is WIP.
+
 ## Author
 
-This application was written by Franz-Benjamin Mocnik, <mail@mocnik-science.net> - with minor modifications. See the commit log for a record of changes.
+This library heavily relies on the original OSMPythonTools written by Franz-Benjamin Mocnik, <mail@mocnik-science.net>.
+See the commit log for a record of changes.
 
 (c) by Franz-Benjamin Mocnik, 2017-2018.
+(c) by Arun Drelich, 2018.
 
-The code is licensed under the [GPL-3](https://github.com/mocnik-science/osm-python-tools/blob/master/LICENSE.md).
+The code is licensed under the [GPL-3](https://github.com/ad2476/osm-python-tools/blob/master/LICENSE.md).

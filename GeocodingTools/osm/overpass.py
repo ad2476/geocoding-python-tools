@@ -4,8 +4,8 @@ import time
 import urllib.parse
 import urllib.request
 
-from OSMPythonTools.element import Element
-from OSMPythonTools.internal.cacheObject import CacheObject
+from GeocodingTools.element import Element
+from GeocodingTools.internal.cacheObject import CacheObject
 
 def _raiseException(prefix, msg):
     sys.tracebacklimit = None

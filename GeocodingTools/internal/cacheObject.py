@@ -4,7 +4,7 @@ import os
 import time
 import urllib.request
 
-import OSMPythonTools
+import GeocodingTools
 
 class CacheObject:
     def __init__(self, prefix, endpoint, cacheDir='cache', waitBetweenQueries=None, jsonResult=True):
@@ -63,7 +63,7 @@ class CacheObject:
         return None
     
     def _userAgent(self):
-        return '%s/%s (%s)' % (OSMPythonTools.__name__, OSMPythonTools.__version__, OSMPythonTools.__url__)
+        return '%s/%s (%s)' % (GeocodingTools.__name__, GeocodingTools.__version__, GeocodingTools.__url__)
     
     def __hash(self, x):
         h = hashlib.sha1()

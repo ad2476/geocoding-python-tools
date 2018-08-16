@@ -1,17 +1,17 @@
 from setuptools import setup
 
-name = 'OSMPythonTools'
+name = 'GeocodingTools'
 version = '0.2.5'
 url = 'https://github.com/ad2476/osm-python-tools'
 
-with open('./OSMPythonTools/__info__.py', 'w') as f:
+with open('./GeocodingTools/__info__.py', 'w') as f:
     f.write('__name__ = \'%s\'\n' % name)
     f.write('__version__ = \'%s\'\n' % version)
     f.write('__url__ = \'%s\'\n' % url)
 
 setup(
     name = name,
-    packages = ['OSMPythonTools', 'OSMPythonTools.internal'],
+    packages = ['GeocodingTools', 'GeocodingTools.internal'],
     install_requires = [
         'beautifulsoup4',
         'datetime',
@@ -25,13 +25,12 @@ setup(
     version = version,
     author = 'Franz-Benjamin Mocnik',
     author_email = 'mail@mocnik-science.net',
-    description = 'A library to access OpenStreetMap related services',
+    description = 'A library to access geocoding services such as OpenStreetMap or Geonames',
     license = 'GPL-3',
     url = url,
     download_url = '',
-    keywords = ['OpenStreetMap', 'OSM', 'service', 'overpass', 'nominatim'],
+    keywords = ['OpenStreetMap', 'OSM', 'service', 'geonames', 'nominatim'],
     classifiers = [
-        'Development Status :: 4 - Beta',
         'Programming Language :: Python :: 3',
     ],
 )

@@ -1,6 +1,6 @@
 import urllib.parse
 
-from OSMPythonTools.internal.cacheObject import CacheObject
+from GeocodingTools.internal.cacheObject import CacheObject
 
 class Nominatim(CacheObject):
     def __init__(self, endpoint='https://nominatim.openstreetmap.org/search', params={}, **kwargs):
